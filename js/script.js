@@ -1,19 +1,53 @@
-const inputField = document.getElementById("squareSide")
-const countButton = document.getElementById("countButton")
+document.addEventListener("DOMContentLoaded", function() {
+    const submitFormArea = document.getElementById("calculateArea")
+    const resetKeliling = document.getElementById("resetButton")
 
-inputField.addEventListener('input',function() {
-    const inputValue = inputField.value.trim()
-    if (validateInput(inputValue)) {
-        countButton.disabled = false
-    } else {
-        countButton.disabled = true
-        
-    }
+    submitFormArea.addEventListener("submit", function(event) {
+        event.preventDefault();
+        hitungLuas();
+    })
+
+    resetButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetFormLuas();
+    });
 })
-// ini event listener ngedengerin saat ada event, diatas
-// contoh kalau ngetik
 
-function validateInput(input) {
-    const integerRegex = /^-?\d+$/;
-    return integerRegex.test(input)
+const containerArea = document.getElementById("resultCalculateArea");
+
+function hitungLuas() {
+    containerArea.innerHTML = "";
+
+    let panjangSisi = parseFloat(document.getElementById("squareSide").value);
+
+    let luas = panjangSisi * panjangSisi;
+
+    heading = document.createElement("h4");
+    heading.innerHTML = "Hasil";
+
+    info = document.createElement("input");
+    info.value = `L = ${panjangSisi} x ${panjangSisi}`;
+    info.setAttribute("readonly", "true");
+
+    result = document.createElement("input");
+    result.value = `L = ${luas}`;
+    result.setAttribute("readonly", "true");
+
+    desc = document.createElement("p");
+    desc.innerText = `Maka Luas dari persegi tersebut ${luas}`;
+
+    containerArea.append(heading, info, result, desc);
+}
+
+
+function resetFormLuas() {
+    document.getElementById("squareSide").value = "";
+
+    containerArea.innerHTML = "";
+}
+
+function resetFormKeliling() {
+    document.getElementById("kelilingPersegiInput").value = "";
+
+    containerPerimeter.innerHTML = "";
 }

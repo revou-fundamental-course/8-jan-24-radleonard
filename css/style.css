@@ -94,3 +94,13 @@ button:active {
     background-color: #0174BE ;
     transform: translateY(3px);
 }
+
+footer {
+    padding: 10px;
+    background-color: #0C356A;
+    color: #FFC436;
+}
+
+a {
+    color: white;
+}

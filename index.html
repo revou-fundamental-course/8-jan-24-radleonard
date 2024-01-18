@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Katik Persegi</title>
+    <title>Kalkulator Geometri</title>
 </head>
 <body>
     <header> <br>
         <h1>
-            Kalkulator Luas dan Keliling Persegi 
+            KaGe. 
         </h1>
-        <h4>Welcome to Kalkulator Luas dan Keliling Persegi</h4>
+        <p style="font-family: comic sans ms;">Kalkulator Geometri</p>
+        <h4>Selamat datang di Kalkulator Luas dan Keliling Persegi</h4>
         <p>Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan Mini Project RevoU</p>
         <br> 
     </header> 
@@ -22,7 +23,7 @@
         </span>
     </nav>
     <div>
-        <img src="250px-Regular_quadrilateral.svg.png" alt="persegi">
+        <img src="/assets/250px-Regular_quadrilateral.svg.png" alt="persegi">
         <p class="tulisanPersegi" id="sisiKanan">sisi</p>
         <p class="tulisanPersegi" id="sisiBawah">sisi</p>
     </div>
@@ -36,17 +37,30 @@
     </div>
     <br>
     <p class="border" style="border-style: double;"></p>
-    <div class="inputSection">
+    <div class="inputSection" id="calculateArea">
         <h2>Hitung Luas Persegi</h2>
         <label for="squareSide" id="lblSquareSide">Masukan panjang sisi persegi</label><br>
         <!-- <input type="number" id="squareSide">cm x -->
         <input type="number" id="squareSide" placeholder="Sisi"> cm
         <!-- <input id="squareSide" placeholder="test doang"> cm -->
-    </div><br>
+    </div>
+    <br>
     <div class="button">
         <button class="buttonPerhitungan" id="hitungButton">Hitung</button>
         <button class="buttonPerhitungan" id="resetButton">Reset</button>
     </div>
+    <div>
+        <p style="text-align: center;"> <b>L = s x s</b></p>
+        <p style="text-align: center;"> <b>L = input x input</b></p>
+        <!-- //diatas masih salah -->
+        <div id="resultCalculationArea"></div>        
+    </div>
 </body>
+<footer>
+    <p>
+        
+        &copy; 2024 <a href="https://www.linkedin.com/in/radleonard/">Leonard Raditya</a>. All rights reserved.
+    </p>
+</footer>
 <script src="js/script.js"></script>
 </html>
