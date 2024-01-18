@@ -69,10 +69,6 @@ img {
     margin-left: 180px;
 }
 
-#squareSide : :focus {
-    border : color solid black; 
-    /* ini diatas masih salah */
-}
 
 button {
     background-color: #0174BE;
@@ -93,6 +89,25 @@ button:disabled {
 button:active {
     background-color: #0174BE ;
     transform: translateY(3px);
+}
+
+#resultCalculateArea {
+    /* 
+    outline: none;
+    border-radius: 16px;
+    font-size: x-large;
+    border: solid #FFC436;
+    */
+    padding: 5px;
+    
+    display: block;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+#resultCalculateArea input:focus {
+    outline: none;
 }
 
 footer {

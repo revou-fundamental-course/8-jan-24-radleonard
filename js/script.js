@@ -1,19 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const submitFormArea = document.getElementById("calculateArea")
-    const resetKeliling = document.getElementById("resetButton")
+document.addEventListener("DOMContentLoaded", function () {
+    const submitFormArea = document.getElementById("calculateArea");
 
-    submitFormArea.addEventListener("submit", function(event) {
+    const resetButton = document.getElementById("resetButton");
+
+    submitFormArea.addEventListener("submit", function (event) {
         event.preventDefault();
         hitungLuas();
-    })
+    });
 
     resetButton.addEventListener("click", function (event) {
         event.preventDefault();
         resetFormLuas();
     });
-})
+
+
+});
 
 const containerArea = document.getElementById("resultCalculateArea");
+
 
 function hitungLuas() {
     containerArea.innerHTML = "";
@@ -39,15 +43,9 @@ function hitungLuas() {
     containerArea.append(heading, info, result, desc);
 }
 
-
 function resetFormLuas() {
     document.getElementById("squareSide").value = "";
 
     containerArea.innerHTML = "";
 }
 
-function resetFormKeliling() {
-    document.getElementById("kelilingPersegiInput").value = "";
-
-    containerPerimeter.innerHTML = "";
-}
