@@ -1,29 +1,57 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FAEED1;
+    background-color: #FFF0CE;
+    /* background-color: #FFC436; */
     text-align: center;
 
 }
 
 header {
-
+    background-color: #0C356A;
 }
 
 header h1 {
-    color: #2e6b5f;
+    color: #FFC436;
     font-size: xx-large;
+    margin-top: -7px;
 }
 
 header h4 {
-    margin-top: 60px;
-    color: #607274;
+    margin-top: 30px;
+    color: #FFC436;
     font-size: larger;
 }
 
 header p {
-    color: #607274;
+    color: #FFC436;
     margin-top: -15px;
     font-size: medium;
+}
+
+.navButton {
+    border-radius: 0px;
+    border-bottom: 8px;
+    padding: 10px ;
+    background-color: #0C356A;
+    /* background-color: #0174BE; */
+    color: #FFF0CE;
+    width: 49%;
+    height: 49%;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div {
+    background-color: #FFF0CE ;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+#rumusLuas {
+    text-align: left;
 }
 
 #squareSide {
@@ -31,18 +59,24 @@ header p {
     outline: none;
     border-radius: 16px;
     font-size: x-large;
-    border: solid #B2A59B;
+    border: solid #FFC436;
     padding: 10px;
 }
 
+#sisiKanan {
+    margin-bottom: 60px;
+    margin-top: -90px;
+    margin-left: 180px;
+}
+
 #squareSide : :focus {
-    border : solid black; 
+    border : color solid black; 
     /* ini diatas masih salah */
 }
 
 button {
-    background-color: #44310f;
-    color: white;
+    background-color: #0174BE;
+    color: #FFF0CE;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -50,10 +84,13 @@ button {
 }
 
 button:hover {
-    background-color: #B2A59B;
+    background-color: #0C356A;
 }
 
+button:disabled {
+    background-color: red;
+}
 button:active {
-    background-color: #B19470 ;
+    background-color: #0174BE ;
     transform: translateY(3px);
 }

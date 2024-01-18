@@ -7,22 +7,46 @@
     <title>Katik Persegi</title>
 </head>
 <body>
-    <header>
+    <header> <br>
         <h1>
             Kalkulator Luas dan Keliling Persegi 
         </h1>
         <h4>Welcome to Kalkulator Luas dan Keliling Persegi</h4>
         <p>Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan Mini Project RevoU</p>
-    </header> <br> <br>
-
+        <br> 
+    </header> 
+    <nav>
+        <span>
+            <button class="navButton">Luas</button>
+            <button class="navButton">Keliling</button>
+        </span>
+    </nav>
+    <div>
+        <img src="250px-Regular_quadrilateral.svg.png" alt="persegi">
+        <p class="tulisanPersegi" id="sisiKanan">sisi</p>
+        <p class="tulisanPersegi" id="sisiBawah">sisi</p>
+    </div>
+    <br>
+    <div id="rumusLuas">
+        <p>Rumus luas Persegi :</p>
+        <p style="text-align: center;"> <b>L = s x s</b></p>
+        <p>Dimana :</p>
+        <p> <b>L = Luas</b></p>
+        <p> <b>s = Sisi Persegi</b></p>
+    </div>
+    <br>
+    <p class="border" style="border-style: double;"></p>
     <div class="inputSection">
-        <label for="squareSide" id="lblSquareSide">Hitung luas persegi</label><br>
+        <h2>Hitung Luas Persegi</h2>
+        <label for="squareSide" id="lblSquareSide">Masukan panjang sisi persegi</label><br>
         <!-- <input type="number" id="squareSide">cm x -->
-        <input type="number" id="squareSide"> cm
+        <input type="number" id="squareSide" placeholder="Sisi"> cm
+        <!-- <input id="squareSide" placeholder="test doang"> cm -->
     </div><br>
     <div class="button">
-        <button class="" id="hitungButton">Hitung</button>
-        <button class="" id="resetButton">Reset</button>
+        <button class="buttonPerhitungan" id="hitungButton">Hitung</button>
+        <button class="buttonPerhitungan" id="resetButton">Reset</button>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
